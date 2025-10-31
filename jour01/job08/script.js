@@ -1,7 +1,5 @@
-// Marker to confirm this file is loaded
 console.log('job08/script.js', new Date().toISOString());
 
-// Vérifie si un entier est premier
 function estPremier(num) {
   if (!Number.isInteger(num) || num <= 1) return false;
   for (let i = 2; i <= Math.sqrt(num); i++) {
