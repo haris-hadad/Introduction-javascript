@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  min-height: 4096px; /* Exigence */
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 280px;
+}
+
+/* Footer = barre de progression */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 14px;
+  width: 0%; /* on mettra à jour cette largeur avec JS */
+  background-color: red; /* couleur initiale */
+  transition: width 0.1s linear, background-color 0.2s linear;
+  z-index: 1000;
+}
