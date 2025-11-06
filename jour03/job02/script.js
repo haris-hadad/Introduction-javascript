@@ -1,10 +1,10 @@
 const images = [
-  "img/arc1.png",
-  "img/arc2.png",
-  "img/arc3.png",
-  "img/arc4.png",
-  "img/arc5.png",
-  "img/arc6.png"
+  "assets/img/arc1.jpg",
+  "assets/img/arc2.jpg",
+  "assets/img/arc3.jpg",
+  "assets/img/arc4.jpg",
+  "assets/img/arc5.jpg",
+  "assets/img/arc6.jpg"
 ];
 
 const jeu = document.getElementById("jeu");
