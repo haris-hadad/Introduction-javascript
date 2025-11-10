@@ -1,8 +1,9 @@
 const btnFiltrer = document.getElementById('filtrer');
 const select = document.getElementById('type');
-const resultsDiv = document.getElementById('results');
 
-let pokemonsData = [];
+
+let pokemonsData = localStorage.getItem('pokemons')?JSON.parse(localStorage.getItem('pokemons')):[];
+displayPokemons(pokemonsData);
 
 // Chargement du fichier JSON
 fetch('pokemon.json')
@@ -49,15 +50,22 @@ btnFiltrer.addEventListener('click', () => {
     const matchNom = nomFilter === '' || pokemon.name.french.toLowerCase().includes(nomFilter);
     const matchType = typeFilter === '' || pokemon.type.includes(typeFilter);
     return matchId && matchNom && matchType;
+   
+   
   });
-
-  // Affichage des résultats
+   localStorage.setItem('pokemons', JSON.stringify(filtered));
+    displayPokemons(filtered);
+  });
+function displayPokemons(pokemons) {
+  const resultsDiv = document.getElementById('results');
+   // Affichage des résultats
   resultsDiv.innerHTML = '';
 
-  if (filtered.length === 0) {
+  if (pokemons.length === 0) {
+    const resultsDiv = document.getElementById('results');
     resultsDiv.textContent = 'Aucun Pokémon trouvé.';
   } else {
-    filtered.forEach(p => {
+    pokemons.forEach(p => {
       const div = document.createElement('div');
       div.className = 'pokemon';
       div.innerHTML = `
@@ -68,4 +76,6 @@ btnFiltrer.addEventListener('click', () => {
       resultsDiv.appendChild(div);
     });
   }
-});
+}
+ 
+
