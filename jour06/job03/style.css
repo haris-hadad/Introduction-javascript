@@ -1,0 +1,26 @@
+.section{
+    background-color: #88c1d0;
+    height: 180px;
+    margin: 18px;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+.section {
+width: 100%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+.section {
+width: 45%;
+display: inline-block;
+}
+}
+
+@media (min-width: 1600px) {
+.section {
+width: 22%;
+display: inline-block;
+}
+}
