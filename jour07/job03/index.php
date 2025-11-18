@@ -63,8 +63,7 @@
         <fieldset>
         <legend>Passions</legend>
         <input type="checkbox" name="passions[]" value="Informatique" id="informatique">
-        <label for="informatique">Informatique</label
-        class="gap-5">
+        <label for="informatique">Informatique</label>
 
 
         <input type="checkbox" name="passions[]" value="Voyages" id="voyages">
@@ -83,12 +82,12 @@
         <button type="submit">Valider</button>
         </form>
     </main>
-    <footer>
-        <ul>
-            <li><a href="index.php">Accueil</a></li>
-            <li><a href="index.php">Inscription</a></li>
-            <li><a href="index.php">Connexion</a></li>
-            <li><a href="index.php">Recherche</a></li>
+    <footer class="fixed bottom-0 w-full bg-black h-16 flex items-center justify-center">
+        <ul class="h-16 flex gap-4 items-center justify-center">
+            <li><a href="index.php" class="text-indigo-50 hover:text-indigo-700">Accueil</a></li>
+            <li><a href="index.php" class="text-indigo-50 hover:text-indigo-700">Inscription</a></li>
+            <li><a href="index.php" class="text-indigo-50 hover:text-indigo-700">Connexion</a></li>
+            <li><a href="index.php" class="text-indigo-50 hover:text-indigo-700">Recherche</a></li>
         </ul>
     </footer>
 
