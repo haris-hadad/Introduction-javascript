@@ -1,6 +1,4 @@
-<?php
-// index.php
-?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -8,11 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
+    <header class="bg-blue-500 h-16 flex items-center justify-center">
         <nav>
-            <ul>
+            <ul class="flex gap-4 place-content-center">
                 <li><a href="index.php">Accueil</a></li>
                 <li><a href="index.php">Inscription</a></li>
                 <li><a href="index.php">Connexion</a></li>
@@ -21,7 +20,7 @@
         </nav>
     </header>
     <main>
-        <form action="index.php" method="post">
+        <form action="index.php" method="post" class="border-solid">
         <fieldset>
         <legend>Civilité</legend>
         <input type="radio" name="civilite" value="Monsieur" id="monsieur">
@@ -33,34 +32,41 @@
 
         <fieldset>
         <label for="prenom">Prénom :</label>
-        <input type="text" name="prenom" id="prenom" required>
+        <input type="text" name="prenom" id="prenom" required
+        class="border border-gray-400 p-2 rounded w-15 mb-5 h-6">
 
 
         <label for="nom">Nom :</label>
-        <input type="text" name="nom" id="nom" required>
+        <input type="text" name="nom" id="nom" required
+        class="border border-gray-400 p-2 rounded w-15 mb-5 h-6">
 
 
         <label for="adresse">Adresse :</label>
-        <input type="text" name="adresse" id="adresse" required>
+        <input type="text" name="adresse" id="adresse" required
+        class="border border-gray-400 p-2 rounded w-15 mb-5 h-6">
 
 
         <label for="email">Email :</label>
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="email" id="email" required
+        class="border border-gray-400 p-2 rounded w-15 mb-5 h-6">
 
 
         <label for="password">Mot de passe :</label>
-        <input type="password" name="password" id="password" required>
+        <input type="password" name="password" id="password" required
+        class="border border-gray-400 p-2 rounded w-15 mb-5 h-6">
 
 
         <label for="password_confirm">Confirmer le mot de passe :</label>
-        <input type="password" name="password_confirm" id="password_confirm" required>
+        <input type="password" name="password_confirm" id="password_confirm" required
+        class="border border-gray-400 p-2 rounded w-15 mb-5 h-6">
         </fieldset>
 
 
         <fieldset>
         <legend>Passions</legend>
         <input type="checkbox" name="passions[]" value="Informatique" id="informatique">
-        <label for="informatique">Informatique</label>
+        <label for="informatique">Informatique</label
+        class="gap-5">
 
 
         <input type="checkbox" name="passions[]" value="Voyages" id="voyages">
