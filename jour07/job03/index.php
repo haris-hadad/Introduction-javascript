@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>Document</title>
+    <title>Formulaire</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -90,6 +90,3 @@
             <li><a href="index.php" class="text-indigo-50 hover:text-indigo-700">Recherche</a></li>
         </ul>
     </footer>
-
-</body>
-</html>
